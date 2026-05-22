@@ -455,7 +455,7 @@ function Objections() {
   return (
     <section className="section obj">
       <div className="container">
-        <SectionLabel n="07" label="Quebra de objeções" />
+        <SectionLabel n="06" label="Quebra de objeções" />
         <h2 className="h2">
           Tudo bem ter dúvida.<br />
           <span className="muted">A gente trata uma por uma.</span>
@@ -522,7 +522,7 @@ function FAQList() {
       <div className="container">
         <div className="faq-grid">
           <div className="faq-side">
-            <SectionLabel n="08" label="Perguntas frequentes" />
+            <SectionLabel n="07" label="Perguntas frequentes" />
             <h2 className="h2">Antes de entrar,<br /><em>tira a dúvida.</em></h2>
             <p className="faq-p">Se faltar alguma, manda no grupo gratuito que a gente responde.</p>
           </div>
