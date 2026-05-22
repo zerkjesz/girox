@@ -19,7 +19,7 @@ const HEADLINES = {
 
 const CTAS = {
   A: { primary: "Quero entrar no Giro X", sub: "Acesso imediato, cancele quando quiser" },
-  B: { primary: "Quero fazer dinheiro de verdade na internet", sub: "Comunidade VIP, R$ 50/mês" }
+  B: { primary: "Quero fazer dinheiro de verdade na internet", sub: "Comunidade VIP, R$ 49,99/mês" }
 };
 
 const PAIN_POINTS = [
@@ -80,8 +80,7 @@ function Nav() {
     <header className="nav">
       <div className="nav-inner">
         <a href="#top" className="logo logo-img" onClick={closeMenu}>
-          <img className="logo-mark-img" src="assets/girox-mark.png" alt="" aria-hidden="true" />
-          <img className="logo-word-img" src="assets/girox-wordmark.png" alt="Girox" />
+          <img className="logo-word-img" src="assets/girox-wordmark.png" alt="Girox" style={{height:"32px"}} />
         </a>
 
         {/* Desktop nav */}
@@ -93,8 +92,8 @@ function Nav() {
         </nav>
 
         <div className="nav-cta">
-          <a href="#grupo-gratis" className="link-muted">Grupo gratuito</a>
-          <button className="btn btn-primary btn-sm">Entrar no VIP <Arrow /></button>
+          <a href="https://chat.whatsapp.com/JUnHqSttJbnHzRxoiTS7U1" target="_blank" rel="noopener" className="link-muted">Grupo gratuito</a>
+          <a href="https://pay.kiwify.com.br/r1NHjyp" target="_blank" rel="noopener" className="btn btn-primary btn-sm">Entrar no VIP <Arrow /></a>
           {/* Hambúrguer — só aparece no mobile via CSS */}
           <button
             className={`nav-hamburger ${menuOpen ? "open" : ""}`}
@@ -113,10 +112,8 @@ function Nav() {
         <a href="#beneficios" onClick={closeMenu}>Benefícios</a>
         <a href="#oferta" onClick={closeMenu}>Oferta</a>
         <a href="#faq" onClick={closeMenu}>FAQ</a>
-        <a href="#grupo-gratis" onClick={closeMenu}>Grupo gratuito</a>
-        <button className="drawer-cta" onClick={closeMenu}>
-          Entrar no VIP →
-        </button>
+        <a href="https://chat.whatsapp.com/JUnHqSttJbnHzRxoiTS7U1" target="_blank" rel="noopener" onClick={closeMenu}>Grupo gratuito</a>
+        <a href="https://pay.kiwify.com.br/r1NHjyp" target="_blank" rel="noopener" className="drawer-cta" onClick={closeMenu}>Entrar no VIP →</a>
       </div>
     </header>);
 }
@@ -146,10 +143,8 @@ function Hero({ headline, cta, motion }) {
           nos maiores marketplaces, antes do mercado, pra você revender com margem.
         </p>
         <div className="cta-row">
-          <button className="btn btn-primary btn-lg">
-            {cta.primary} <Arrow size={16} />
-          </button>
-          <a href="#grupo-gratis" className="btn btn-ghost btn-lg">Grupo Gratuito</a>
+          <a href="https://pay.kiwify.com.br/r1NHjyp" target="_blank" rel="noopener" className="btn btn-primary btn-lg">{cta.primary} <Arrow size={16} /></a>
+          <a href="https://chat.whatsapp.com/JUnHqSttJbnHzRxoiTS7U1" target="_blank" rel="noopener" className="btn btn-ghost btn-lg">Grupo Gratuito</a>
         </div>
 
         <div className="hero-stats">
@@ -417,7 +412,7 @@ function Offer({ cta }) {
               Quer sentir antes de decidir? Entre no grupo gratuito e veja uma amostra
               do que entregamos todos os dias. Quando estiver pronto, o VIP está aqui.
             </p>
-            <a href="#grupo-gratis" className="btn btn-ghost">Ver grupo gratuito <Arrow /></a>
+            <a href="https://chat.whatsapp.com/JUnHqSttJbnHzRxoiTS7U1" target="_blank" rel="noopener" className="btn btn-ghost">Ver grupo gratuito <Arrow /></a>
           </div>
           <div className="offer-card">
             <div className="offer-card-hd">
@@ -429,7 +424,7 @@ function Offer({ cta }) {
                 <span className="offer-price-old">de R$ 150</span>
                 <div className="offer-price-now">
                   <span className="offer-currency">R$</span>
-                  <span className="offer-amount">50</span>
+                  <span className="offer-amount">49,99</span>
                   <span className="offer-period">/mês</span>
                 </div>
               </div>
@@ -444,9 +439,9 @@ function Offer({ cta }) {
               map((l, i) =>
               <li key={i}><span className="li-tick"><Tick /></span>{l}</li>
               )}
-              <li className="bonus"><span className="li-tick bonus-tick">+</span><span><strong>Bônus fundador</strong>: preço travado em R$ 50 enquanto for assinante</span></li>
+              <li className="bonus"><span className="li-tick bonus-tick">+</span><span><strong>Bônus fundador</strong>: preço travado em R$ 49,99 enquanto for assinante</span></li>
             </ul>
-            <button className="btn btn-primary btn-lg btn-full">{cta.primary} <Arrow size={16} /></button>
+            <a href="https://pay.kiwify.com.br/r1NHjyp" target="_blank" rel="noopener" className="btn btn-primary btn-lg btn-full">{cta.primary} <Arrow size={16} /></a>
             <p className="offer-fine">{cta.sub} · Cartão · Pix · Boleto</p>
           </div>
         </div>
@@ -504,10 +499,10 @@ function GuaranteeUrgency() {
           <div className="gu-tag urgency-tag">Vagas de fundador</div>
           <div className="gu-big">
             Só <span className="big-num">30</span> vagas a<br />
-            <em>R$ 50/mês.</em>
+            <em>R$ 49,99/mês.</em>
           </div>
           <p className="gu-p">
-            As primeiras 30 vagas entram pagando R$ 50/mês, preço travado enquanto
+            As primeiras 30 vagas entram pagando R$ 49,99/mês, preço travado enquanto
             forem assinantes. Depois que essas vagas fecharem, o valor sobe para R$ 150/mês.
           </p>
           <div className="urgency-bar">
@@ -566,7 +561,7 @@ function FinalCTA({ cta }) {
           comunidade que vive disso, e suporte na hora.
         </p>
         <p className="final-q"><em>A pergunta é:</em> você vai dar o seu giro?</p>
-        <button className="btn btn-primary btn-xl">{cta.primary} <Arrow size={18} /></button>
+        <a href="https://pay.kiwify.com.br/r1NHjyp" target="_blank" rel="noopener" className="btn btn-primary btn-xl">{cta.primary} <Arrow size={18} /></a>
 
         <div className="ps-block">
           <div className="ps">
@@ -575,7 +570,7 @@ function FinalCTA({ cta }) {
           </div>
           <div className="ps">
             <span className="ps-tag">PPS</span>
-            Só 30 vagas com preço travado em R$ 50. Depois sobe pra R$ 150. Quem age primeiro, paga menos pra sempre.
+            Só 30 vagas com preço travado em R$ 49,99. Depois sobe pra R$ 150. Quem age primeiro, paga menos pra sempre.
           </div>
         </div>
       </div>
@@ -589,7 +584,7 @@ function Footer() {
       <div className="container footer-inner">
         <div className="footer-top">
           <div className="logo logo-img logo-footer">
-            <img className="logo-word-img" src="assets/girox-wordmark.png" alt="Girox" />
+            <img className="logo-word-img" src="assets/girox-wordmark.png" alt="Girox" style={{height:"48px"}} />
           </div>
           <p className="footer-tag">Inteligência de mercado para quem vende online.</p>
         </div>
@@ -668,7 +663,6 @@ function App() {
       <PainPoints />
       <Solution />
       <Benefits />
-      <LiveFeed />
       <SocialProof />
       <Offer cta={cta} />
       <Objections />
