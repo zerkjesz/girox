@@ -598,7 +598,7 @@ function Footer() {
           </label>
         </div>
         <div className="footer-bot">
-          <span>© 2026 Giro X · CNPJ 00.000.000/0001-00</span>
+          <span>© 2026 Giro X</span>
           <span className="footer-links">
             <a href="#">Termos</a>
             <a href="#">Privacidade</a>
