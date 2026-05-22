@@ -370,7 +370,7 @@ function SocialProof() {
   return (
     <section className="section proof">
       <div className="container">
-        <SectionLabel n="05" label="Prova social" />
+        <SectionLabel n="04" label="Quem já tá no movimento" />
         <div className="proof-top">
           <div className="proof-big">+500</div>
           <div className="proof-big-lbl">pessoas já estão no Giro X</div>
@@ -401,7 +401,7 @@ function Offer({ cta }) {
   return (
     <section className="section offer" id="oferta">
       <div className="container">
-        <SectionLabel n="06" label="A oferta" />
+        <SectionLabel n="05" label="A oferta" />
         <div className="offer-grid">
           <div className="offer-copy">
             <h2 className="h2">
